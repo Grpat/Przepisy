@@ -1,0 +1,118 @@
+@model Hostele.ViewModels.RecipeCreateViewModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Dodaj przepis</h1>
+
+<hr />
+<div class="row">
+    @using ( Html.BeginForm( "Create", "Recipe", FormMethod.Post, new { id = "home-view", @class = "english-form", enctype = "multipart/form-data" } ) )
+        {
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="col-sm-5">
+                <label asp-for="RecipeName" class="control-label"></label>
+                <input asp-for="RecipeName" class="form-control" />
+                <span asp-validation-for="RecipeName" class="text-danger"></span>
+            </div>
+            <div class="col-sm-5">
+                <label asp-for="PrepTime" class="control-label"></label>
+                <input asp-for="PrepTime" class="form-control" />
+                <span asp-validation-for="PrepTime" class="text-danger"></span>
+            </div>
+            <div class="col-sm-5">
+                 <label asp-for="RecipeImage" class="control-label"></label>
+                 <input asp-for="RecipeImage" type="file" id="uploadBox" name="file" class="form-control"/>
+                 <span asp-validation-for="RecipeImage" class="text-danger"></span>
+            </div>
+            <div class="col-sm-5">
+                <label asp-for="Difficulty" class="control-label"></label>
+                    <select asp-for="Difficulty"
+                            class="form-control" asp-items="Html.GetEnumSelectList<Difficulty>()">
+                    </select>
+                <span asp-validation-for="Difficulty" class="text-danger"></span>
+            </div>
+            <div class="col-sm-5 pb-5">
+                <label asp-for="CategoryId" class="control-label"></label>
+                <select asp-for="CategoryId" class ="form-control" asp-items="ViewBag.CategoryId"></select>
+            </div>
+
+            <h4>Napisz krok po kroku jak przygotować potrawę</h4>
+            <div id="StepsHeaderClass">
+                @*@{
+                    await Html.RenderPartialAsync("~/Views/Shared/_StepPartiall2.cshtml");
+                }*@
+            </div>
+            <div class="form-group pt-2 pb-5">
+                <button type="button" id="Btn_AddSteps" class="btn btn-danger "> <i class="bi bi-plus-lg"></i></button>
+            </div>
+            <h4>Dodaj składniki potrawy</h4>
+            <div id="RecipeIngredientsHeaderClass">
+               
+            </div>
+            <div class="form-group pt-2 pb-5">
+                <button type="button" id="Btn_AddIngredients"  class="btn btn-danger "> <i class="bi bi-plus-lg"></i></button>
+            </div>
+           
+            <div class="form-group">
+                <input type="submit" id="submit" name="submit"  class="btn btn-danger float-sm-end btn-lg" value="Prześlij przepis" />
+                
+            </div>
+        }
+    </div>
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    
+    <script>
+    $(document).on('click', '#Btn_AddSteps', function (e) { 
+               $.ajax({  
+                   type:'POST',
+                   async:'true',
+                   url: '/Recipe/DisplaySteps',  
+                   success: function (partialView) {  
+                         
+                       $('#StepsHeaderClass').append(partialView);  
+                           $('form').removeData('validator');                   
+                           $('form').removeData('unobtrusiveValidation');                     
+                           $.validator.unobtrusive.parse('form');           
+                   }  
+               });  
+           });
+    
+       
+       
+       $(document).on('click', '#Btn_AddIngredients', function (e) { 
+                      $.ajax({  
+                          type:'POST',
+                          async:'true',
+                          url: '/Recipe/DisplayIngredient',  
+                          success: function (partialView) {  
+                                
+                              $('#RecipeIngredientsHeaderClass').append(partialView);  
+                                  $('form').removeData('validator');                   
+                                  $('form').removeData('unobtrusiveValidation');                     
+                                  $.validator.unobtrusive.parse('form');           
+                          }  
+                      });  
+                  });
+       function deleteStep(StepDiv)
+       {
+       StepDiv.remove();
+       }
+        function deleteIngredient(IngredientDiv)
+              {
+             IngredientDiv.remove();
+              }
+             
+     </script>
+}
+ 

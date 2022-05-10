@@ -1,0 +1,54 @@
+﻿@model Recipe
+<div class="row pb-3">
+    <div class="row groupforIngredients">
+        <div class="form-group col-sm-4">
+            @*<label class="control-label">Składnik</label>*@
+            <select class="form-control IngredientsList" data-val="true" data-val-required="The IngredientsId field is required." name="IngredientsList">
+            </select>
+        </div>
+        <div class="form-group col-sm-2">
+            @*<label class="control-label" for="Amount">Ilość</label>*@
+            <input class="form-control amount" type="text" data-val="true" data-val-number="The field Ilość must be a number." data-val-required="The Ilość; field is required." name="Amount" value=""
+                   placeholder="Podaj ilość"/>
+        </div>
+        @*<label class="control-label" for="Measure">Jednostka</label>*@
+        <div class="form-group col-sm-2">
+            <select class="form-control measure" asp-items="Html.GetEnumSelectList<Difficulty>()" name="Measure">
+                @*@foreach (var item in Model)
+                {
+                    <option value=@item.>gram</option>
+                }*@
+                @*<option >Jednostka </option>
+                <option value="0">gram</option>
+                <option value="1">kilogram</option>
+                <option value="2">sztuka</option>
+                <option value="3">szczypta</option>
+                <option value="4">łyżka</option>
+                <option value="5">Szklanka</option>
+                <option value="6">dekagram</option>
+                <option value="7">litr</option>
+                <option value="8">pęczek</option>
+                <option value="9">opakowanie</option>
+                <option value="10">mililitr</option>
+                <option value="11">łyżeczka</option>
+                <option value="12">ziarno</option>
+                <option value="13">plaster</option>
+                <option value="14">słoik</option>
+                <option value="15">puszka</option>
+                <option value="16">listek</option>
+                <option value="17">garść</option>
+                <option value="18">cm</option>#2#*@
+                 
+                
+            </select>
+              @*<select asp-for="Difficulty" 
+                                    class="form-control" asp-items="Html.GetEnumSelectList<Difficulty>()">
+                                <option>Select type ...</option>
+                            </select>*@
+        </div>
+        <div class="col-sm-1 target">
+            @*<a style="visibility:hidden"> Delete :</a>   $2$just to make the button align #2#*@
+            <button type="sumbit" id="Btn_DeleteRecipeIngredient" class="btn btn-outline-danger"> <i class="bi bi-x-lg"></i></button>
+        </div>
+    </div>
+</div>

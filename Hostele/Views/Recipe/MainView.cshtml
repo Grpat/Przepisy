@@ -1,0 +1,108 @@
+@model X.PagedList.IPagedList<Hostele.ViewModels.RecipeSearchViewModel>
+
+@using X.PagedList.Mvc.Core
+@using System.Collections
+@using Microsoft.AspNetCore.Mvc.Rendering
+@using X.PagedList.Web.Common
+@{
+    ViewBag.Title = "MainView";
+    var list = ViewData["ItemsList"];
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Przepisy</h1>
+
+@using (Html.BeginForm("MainView", "Recipe", FormMethod.Get))
+{
+    <div class="recepie_search">
+        <div class="row pb-4 ">
+            <div class="col-sm-11 ">
+                @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new {@class = "form-control", placeholder = "Wpisz nazwę dania lub składniki, które masz w lodówce..."})
+            </div>
+            <div class="col-sm-1">
+                <button type="submit" class="btn btn-danger float-end">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+            <div class="d-flex flex-row-reverse pt-4">
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <button type="button" class="btn btn-danger">Sortuj</button>
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop4" type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop4">
+                            @Html.ActionLink("Nazwa", "MainView", new {sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter, category = ViewBag.CurrentCategoryFilter}, new {@class = "dropdown-item"})
+                            @Html.ActionLink("Nowe", "MainView", new {sortOrder = ViewBag.DateSortParm, currentFilter = ViewBag.CurrentFilter, category = ViewBag.CurrentCategoryFilter}, new {@class = "dropdown-item"})
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-danger">Kategorie</button>
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop4" type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop4">
+                            @if (list != null)
+                            {
+                                foreach (var item in  (IEnumerable<string>) list)
+                                {
+                                    @Html.ActionLink(item, "MainView", new {sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter, category = item}, new {@class = "dropdown-item"})
+                                }
+                            }
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+}
+
+
+<div class="recepie_area plus_padding">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <!-- Single Best Receipe Area -->
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="single_recepie text-center">
+                        <div class="recepie_thumb">
+                            <img class="img-fluid"src=@item.RecipeImage alt="">
+                        </div>
+                        <h3>@item.RecipeName</h3>
+                        @*<span>Appetizer</span>*@
+                        <p>Czas Przygotowania: @item.PrepTime Min</p>
+                        <p>Trudność: @item.Difficulty</p>
+                            <div class="small-ratings">
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star rating-color"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        
+                        
+                        <a  class="line_btn" asp-action="RecipeDetails" asp-route-id="@item.Id">Zobacz Pełny Przepis</a> 
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+<div class="d-flex flex-row-reverse pt-4">
+    Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+</div>
+<div class="d-flex flex-row-reverse">
+    @Html.PagedListPager(Model, page => Url.Action("MainView",
+        new {page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter}), new PagedListRenderOptions
+        {
+            DisplayLinkToIndividualPages = true,
+            DisplayPageCountAndCurrentLocation = false,
+            MaximumPageNumbersToDisplay = 10,
+            LiElementClasses = new string[] {"page-item"},
+            PageClasses = new string[] {"page-link"},
+        });
+</div>

@@ -1,0 +1,129 @@
+@model Hostele.ViewModels.RecipeDetailsViewModel
+
+@{
+    ViewData["Title"] = "RecipeDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var index = 0;
+}
+
+@*<h1>Details</h1>*@
+
+<!-- Receipe Slider -->
+@*<div class="container">
+    $1$<div class="row">
+        <div class="col-12">
+            <div class="receipe-slider owl-carousel">
+                <img src="@Url.Content(Model?.RecipeImage)" class="mx-auto d-block" alt="">
+            </div>
+        </div>
+        
+    </div>#1#
+</div>*@
+
+<div class="receipe-content-area">
+    <div class="container">
+       <div class="row">
+               <div class="col-12">
+                   <div class="receipe-slider owl-carousel">
+                       <img src="@Url.Content(Model?.RecipeImage)" class="img-fluid mx-auto d-block" alt="">
+                   </div>
+               </div>
+               
+           </div>
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <div class="receipe-headline my-5">
+                    <span>@Html.DisplayFor(modelItem => modelItem.CreatedDate)</span>
+                    <h2>@Html.DisplayFor(modelItem => modelItem.RecipeName)</h2>
+                    <div class="receipe-duration">
+                        <h6>Czas: @Html.DisplayFor(modelItem => modelItem.PrepTime) min </h6>
+                        <h6>Trudność: @Html.DisplayFor(modelItem => modelItem.Difficulty)</h6>
+                        <h6>Kategoria: @Html.DisplayFor(modelItem => modelItem.Category!.CategoryName)</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="receipe-ratings text-right my-5">
+                    <div class="ratings">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <a href="#" class="btn delicious-btn">For Begginers</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <!-- Single Preparation Step -->
+                @foreach (var item in Model?.Steps!)
+                {
+                    <div class="single-preparation-step d-flex">
+                        <h4> @(++index) .</h4>
+                        <p>@Html.DisplayFor(modelItem => item.Description). </p>
+                    </div>
+                }
+
+            </div>
+
+            <!-- Ingredients -->
+            <div class="col-12 col-lg-4">
+                <div class="ingredients">
+                    <h4>Ingredients</h4>
+                    @foreach (var item in Model?.RecipeIngredients!)
+                    {
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1"> (@Html.DisplayFor(modelItem => item.Amount) @Html.DisplayFor(modelItem => item.Measure) ) @Html.DisplayFor(modelItem => item.Ingredients!.IngredientName)</label>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading text-left">
+                    <h3>Leave a comment</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="contact-form-area">
+                    <form action="#" method="post">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <input type="text" class="form-control" id="name" placeholder="Name">
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <input type="email" class="form-control" id="email" placeholder="E-mail">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                            </div>
+                            <div class="col-12">
+                                <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn delicious-btn mt-30" type="submit">Post Comments</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div>
+    @*<a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |*@
+    <a asp-action="Index">Back to List</a>
+</div>
