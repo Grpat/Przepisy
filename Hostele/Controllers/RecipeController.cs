@@ -69,14 +69,13 @@ namespace Hostele.Controllers
             //Should be done in reposiotory as Queryable 
             var recipes = from s in await _unitOfWork.Recipe.GetAll(include: x => x
                     .Include(a=>a.Category)
-                    .Include(a => a.RecipeIngredients)
-                    .ThenInclude(a => a.Ingredients))
+                    .Include(a => a.Ingrds))
                 select s;
             
             if (!String.IsNullOrEmpty(searchString))
             {
-                recipes = recipes.Where(s => s.RecipeIngredients != null && (s.RecipeName.ToUpper().Contains(searchString.ToUpper())
-                                                                               ||  s.RecipeIngredients.Select(x=>x.Ingredients?.IngredientName.ToUpper()).Contains(searchString.ToUpper())));
+                recipes = recipes.Where(s => s.Ingrds != null && (s.RecipeName.ToUpper().Contains(searchString.ToUpper())
+                                                                               ||  s.Ingrds.Select(x=>x.IngredientName.ToUpper()).Contains(searchString.ToUpper())));
             }
             if (!String.IsNullOrEmpty(category))
             {
@@ -116,9 +115,7 @@ namespace Hostele.Controllers
         
         public async Task<PartialViewResult> DisplayIngredient()
         {
-            var recipeIngredient = new RecipeIngredientCreateViewModel();
-            var ingredientsList = await _context.Ingredients.ToListAsync();
-            recipeIngredient.Ingredients = new SelectList(ingredientsList, "Id", "IngredientName",recipeIngredient.IngredientsId);
+            var recipeIngredient = new IngredientCreateViewModel();
             return PartialView("_RecipeIngredientPartiall2",recipeIngredient);
         }  
         // GET: AddRecipe/Details/5
@@ -150,14 +147,9 @@ namespace Hostele.Controllers
             var recipe = await _unitOfWork.Recipe.GetFirstOrDefault(x => x.Id == id, include: y => y
                 .Include(r => r.Category)
                 .Include(r => r.Steps)
-                .Include(r => r.RecipeIngredients)
-                .ThenInclude(r => r.Ingredients));
-            /*var recipe = await _context.Recipes
-                .Include(r => r.Category)
-                .Include(r=>r.Steps)
-                .Include(r=>r.RecipeIngredients)
-                .ThenInclude(r=>r.Ingredients)
-                .FirstOrDefaultAsync(m => m.Id == id);*/
+                .Include(r => r.Ingrds));
+                
+           
             var recipeSDetailsViewModel = _mapper.Map<RecipeDetailsViewModel>(recipe);
             if (recipe == null)
             {
@@ -182,7 +174,7 @@ namespace Hostele.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         
-        public async Task<IActionResult> Create([Bind("Id,RecipeName,PrepTime,RecipeImage,Difficulty,CategoryId,Steps,RecipeIngredients")] RecipeCreateViewModel recipe,IFormFile file)
+        public async Task<IActionResult> Create([Bind("Id,RecipeName,PrepTime,RecipeImage,Difficulty,CategoryId,Steps,Ingrds")] RecipeCreateViewModel recipe,IFormFile file)
         {
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);

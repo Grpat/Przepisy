@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XhF6NlE+2rvERg9fy05ta+0sLviYJ6B+9guWQoVUl5s=",
+  "Hash": "Ah0qIzSQ6FUpnhOfYzB4i6eMv4c0YjXc7Rdj62ZR0bY=",
   "Source": "Hostele",
   "BasePath": "_content/Hostele",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "Hostele\\wwwroot",
       "Source": "Hostele",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "Pattern": "**"
     }
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "C:\\Users\\Patryk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Hostele.styles.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Hostele.styles.css",
       "SourceId": "Hostele",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "Hostele.styles.css",
       "AssetKind": "All",
@@ -1051,13 +1051,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Hostele.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Hostele.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Hostele.bundle.scp.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Hostele.bundle.scp.css",
       "SourceId": "Hostele",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "Hostele.bundle.scp.css",
       "AssetKind": "All",
@@ -1068,13 +1068,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Hostele.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Hostele.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\css\\bootsswatch.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\css\\bootsswatch.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "css/bootsswatch.css",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootsswatch.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\css\\bootswatch.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\css\\bootswatch.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "css/bootswatch.css",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootswatch.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\css\\bootswatch2.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\css\\bootswatch2.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "css/bootswatch2.css",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootswatch2.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\css\\bootswatch3.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\css\\bootswatch3.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "css/bootswatch3.css",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootswatch3.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\css\\PagedList.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\css\\PagedList.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "css/PagedList.css",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\css\\PagedList.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\css\\site.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\favicon.ico",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\bbb.jpg",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\images\\bbb.jpg",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "images/bbb.jpg",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bbb.jpg"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\home.jpg",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\images\\home.jpg",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "images/home.jpg",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\images\\home.jpg"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\home2.jpg",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\images\\home2.jpg",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "images/home2.jpg",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\images\\home2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\pexels-pixabay-326279.jpg",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\images\\pexels-pixabay-326279.jpg",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "images/pexels-pixabay-326279.jpg",
       "AssetKind": "All",
@@ -1258,12 +1258,12 @@
       "OriginalItemSpec": "wwwroot\\images\\pexels-pixabay-326279.jpg"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\0289ad28-9a0c-48f9-aefc-7f16e60ff74d.png",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\images\\recipes\\8fc2a176-6069-44d6-8d5e-ccd32e7f8964.jpg",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/0289ad28-9a0c-48f9-aefc-7f16e60ff74d.png",
+      "RelativePath": "images/recipes/8fc2a176-6069-44d6-8d5e-ccd32e7f8964.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1272,370 +1272,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\0289ad28-9a0c-48f9-aefc-7f16e60ff74d.png"
+      "OriginalItemSpec": "wwwroot\\images\\recipes\\8fc2a176-6069-44d6-8d5e-ccd32e7f8964.jpg"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\044609e3-b5ae-4e10-b4b7-cb48fec0bdee.jpg",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\js\\site.js",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/044609e3-b5ae-4e10-b4b7-cb48fec0bdee.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\044609e3-b5ae-4e10-b4b7-cb48fec0bdee.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\06fb2c56-bf92-4015-acb0-687bda19d52a.jpg",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/06fb2c56-bf92-4015-acb0-687bda19d52a.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\06fb2c56-bf92-4015-acb0-687bda19d52a.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\0ac0376d-e4b7-4840-b7e2-9016915b3d1a.png",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/0ac0376d-e4b7-4840-b7e2-9016915b3d1a.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\0ac0376d-e4b7-4840-b7e2-9016915b3d1a.png"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\1599d090-a321-439d-9a0d-83167584cd69.png",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/1599d090-a321-439d-9a0d-83167584cd69.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\1599d090-a321-439d-9a0d-83167584cd69.png"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\15d9f1aa-431f-447c-8ebe-4bc5a178802e.png",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/15d9f1aa-431f-447c-8ebe-4bc5a178802e.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\15d9f1aa-431f-447c-8ebe-4bc5a178802e.png"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\280de836-8f9d-4d9f-9fc0-d5dfd632ecb8.png",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/280de836-8f9d-4d9f-9fc0-d5dfd632ecb8.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\280de836-8f9d-4d9f-9fc0-d5dfd632ecb8.png"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\30962d21-b982-4096-b3f6-af0b69512d08.jpg",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/30962d21-b982-4096-b3f6-af0b69512d08.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\30962d21-b982-4096-b3f6-af0b69512d08.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\310b713c-3b67-4411-b71a-87633a32eb05.png",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/310b713c-3b67-4411-b71a-87633a32eb05.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\310b713c-3b67-4411-b71a-87633a32eb05.png"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\3fee8c7e-76f0-47e2-92b0-9e6ac6d1961c.jpg",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/3fee8c7e-76f0-47e2-92b0-9e6ac6d1961c.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\3fee8c7e-76f0-47e2-92b0-9e6ac6d1961c.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\49a497c4-cb66-47a6-a10a-efa762257bb6.jpg",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/49a497c4-cb66-47a6-a10a-efa762257bb6.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\49a497c4-cb66-47a6-a10a-efa762257bb6.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\5225277d-43f8-4823-8f9b-342750977346.jpg",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/5225277d-43f8-4823-8f9b-342750977346.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\5225277d-43f8-4823-8f9b-342750977346.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\64e43d9e-b56e-4cc0-9cbd-31bf76ba859d.jpg",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/64e43d9e-b56e-4cc0-9cbd-31bf76ba859d.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\64e43d9e-b56e-4cc0-9cbd-31bf76ba859d.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\6614aa5a-3456-4c3d-96d3-3d5d2c994b6f.png",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/6614aa5a-3456-4c3d-96d3-3d5d2c994b6f.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\6614aa5a-3456-4c3d-96d3-3d5d2c994b6f.png"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\74ec700f-6535-4747-87b8-8260e07b8473.png",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/74ec700f-6535-4747-87b8-8260e07b8473.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\74ec700f-6535-4747-87b8-8260e07b8473.png"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\751c2daf-01b2-4490-85fd-7ed84ad91c9a.jpg",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/751c2daf-01b2-4490-85fd-7ed84ad91c9a.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\751c2daf-01b2-4490-85fd-7ed84ad91c9a.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\7e431fa0-b1cd-46bf-bb81-bf554e74094d.png",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/7e431fa0-b1cd-46bf-bb81-bf554e74094d.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\7e431fa0-b1cd-46bf-bb81-bf554e74094d.png"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\88817bc0-c410-4f0c-a299-bbbe782ee262.jpg",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/88817bc0-c410-4f0c-a299-bbbe782ee262.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\88817bc0-c410-4f0c-a299-bbbe782ee262.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\8c44fef5-4124-458c-a986-ca4e0d9acb39.png",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/8c44fef5-4124-458c-a986-ca4e0d9acb39.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\8c44fef5-4124-458c-a986-ca4e0d9acb39.png"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\8de8125c-2b7a-45f5-a6dd-2e60acc42144.jpeg",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/8de8125c-2b7a-45f5-a6dd-2e60acc42144.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\8de8125c-2b7a-45f5-a6dd-2e60acc42144.jpeg"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\91249627-08a3-41f4-a89d-30b8e654c9a4.png",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/91249627-08a3-41f4-a89d-30b8e654c9a4.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\91249627-08a3-41f4-a89d-30b8e654c9a4.png"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\images\\recipes\\a5050e28-559a-4b61-a5b2-b584116121a3.jpg",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
-      "BasePath": "_content/Hostele",
-      "RelativePath": "images/recipes/a5050e28-559a-4b61-a5b2-b584116121a3.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\recipes\\a5050e28-559a-4b61-a5b2-b584116121a3.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\js\\site.js",
-      "SourceId": "Hostele",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1649,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1666,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1683,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1700,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1717,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1734,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1751,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1768,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1785,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1802,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1819,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1836,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1853,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1870,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1887,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1904,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1921,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1938,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1955,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1972,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1989,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2006,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2023,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2040,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2057,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -2074,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -2091,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -2108,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2125,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2142,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2159,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2176,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2193,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2210,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2227,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2244,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2261,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2278,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2295,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2312,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2329,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2346,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2363,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2380,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2397,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2414,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2431,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2448,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2465,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2482,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2499,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2516,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2533,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2550,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2567,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2584,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2601,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Hostele",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\wwwroot\\",
       "BasePath": "_content/Hostele",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",

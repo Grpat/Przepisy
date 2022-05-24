@@ -10,8 +10,6 @@ public class Step
     
     public string Description { get; set; }
     
-    public string? StepImage { get; set; }
-    
     public int RecipeId { get; set; }
     public Recipe? Recipe { get; set; }
 }

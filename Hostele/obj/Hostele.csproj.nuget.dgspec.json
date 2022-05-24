@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\Hostele.csproj": {}
+    "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\Hostele.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\Hostele.csproj": {
+    "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\Hostele.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\Hostele.csproj",
+        "projectUniqueName": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\Hostele.csproj",
         "projectName": "Hostele",
-        "projectPath": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\Hostele.csproj",
+        "projectPath": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\Hostele.csproj",
         "packagesPath": "C:\\Users\\Patryk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\obj\\",
+        "outputPath": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Patryk\\AppData\\Roaming\\NuGet\\NuGet.Config"

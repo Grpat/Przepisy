@@ -1,12 +1,15 @@
 ﻿@using HtmlHelpers.BeginCollectionItemCore
-@model Hostele.ViewModels.RecipeIngredientCreateViewModel
+@model Hostele.ViewModels.IngredientCreateViewModel
 <div class="row pt-3" id="@Model?.UniqueId">
-@using (Html.BeginCollectionItem("RecipeIngredients"))
+@using (Html.BeginCollectionItem("Ingrds"))
 {
     <div class="col-sm-4">
-        <label asp-for="IngredientsId" class="control-label"></label>
+        @*<label asp-for="IngredientsId" class="control-label"></label>
         <select asp-for="IngredientsId" class ="form-control" asp-items="@Model?.Ingredients"></select>
-        <span asp-validation-for="IngredientsId" class="text-danger"></span>
+        <span asp-validation-for="IngredientsId" class="text-danger"></span>*@
+        <label asp-for="IngredientName" class="control-label"></label>
+                <input asp-for="IngredientName" class="form-control" />
+                <span asp-validation-for="IngredientName" class="text-danger"></span>
     </div>
     <div class="col-sm-3">
         <label asp-for="Amount" class="control-label"></label>

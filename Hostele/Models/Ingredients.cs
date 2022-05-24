@@ -12,18 +12,18 @@ public class Ingredients
     public string IngredientName { get; set; }
     
     [Column(TypeName = "decimal(5, 1)")]
-    public decimal? Carbohydrates { get; set; }
+    public decimal Carbohydrates { get; set; }
     
     
     [Column(TypeName = "decimal(5, 1)")]
-    public decimal? Protein { get; set; }
+    public decimal Protein { get; set; }
     
     
     [Column(TypeName = "decimal(5, 1)")]
-    public decimal? Fat { get; set; }
+    public decimal Fat { get; set; }
     
     [Column(TypeName = "decimal(5, 1)")]
-    public decimal? Kcal { get; set; }
-    public IEnumerable<RecipeIngredient>? RecipeIngredients { get; set; }
+    public decimal Kcal { get; set; }
+    
 
 }

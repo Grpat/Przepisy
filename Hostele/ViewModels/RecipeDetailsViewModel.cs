@@ -20,7 +20,7 @@ public class RecipeDetailsViewModel
     public int CategoryId { get; set; }
     public Category? Category { get; set; }
     
-    public IEnumerable<RecipeIngredient>? RecipeIngredients { get; set; }
+    public IEnumerable<Ingredient>? Ingrds { get; set; }
     public List<Step> Steps { get; set; }
     
     public string AppUserId { get; set; }

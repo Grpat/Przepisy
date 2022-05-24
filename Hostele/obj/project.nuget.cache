@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TkiD69tPfVSqE8DTly1k2CxvIvpOv2UwNyQ+QgCBjbaw+2J7XA1ezP7m991gjRunIA19LvcdPu5F2UlCHBRaNA==",
+  "dgSpecHash": "4J9lCKZLR3ESzxafjjJytcpOx9zeHzdPEvE3+AAJc8iD3kAAiU57tv0B7/vvsllKSRC1mbqpip5V2uaX16HC1A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Patryk\\Downloads\\Hostele (3) (1)\\Hostele (3)\\Hostele\\Hostele\\Hostele.csproj",
+  "projectFilePath": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\Hostele.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Patryk\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Patryk\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

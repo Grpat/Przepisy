@@ -108,6 +108,37 @@ namespace Hostele.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("Hostele.Models.Ingredient", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<decimal?>("Amount")
+                        .HasColumnType("decimal(5,1)");
+
+                    b.Property<string>("IngredientName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("Measure")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MeasureNumber")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RecipeId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RecipeId");
+
+                    b.ToTable("Ingrds");
+                });
+
             modelBuilder.Entity("Hostele.Models.Ingredients", b =>
                 {
                     b.Property<int>("Id")
@@ -367,6 +398,17 @@ namespace Hostele.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Hostele.Models.Ingredient", b =>
+                {
+                    b.HasOne("Hostele.Models.Recipe", "Recipe")
+                        .WithMany("Ingrds")
+                        .HasForeignKey("RecipeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Recipe");
+                });
+
             modelBuilder.Entity("Hostele.Models.Recipe", b =>
                 {
                     b.HasOne("Hostele.Models.AppUser", "AppUser")
@@ -479,6 +521,8 @@ namespace Hostele.Migrations
 
             modelBuilder.Entity("Hostele.Models.Recipe", b =>
                 {
+                    b.Navigation("Ingrds");
+
                     b.Navigation("RecipeIngredients");
 
                     b.Navigation("Steps");

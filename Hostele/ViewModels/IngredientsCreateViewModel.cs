@@ -29,5 +29,5 @@ public class IngredientsCreateViewModel
     [Display(Name = "Kcal")]
     [Column(TypeName = "decimal(5, 1)")]
     public decimal? Kcal { get; set; }
-    public IEnumerable<RecipeIngredient>? RecipeIngredients { get; set; }
+   
 }

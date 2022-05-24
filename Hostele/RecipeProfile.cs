@@ -11,14 +11,14 @@ public class HostelProfile:Profile
     {
         CreateMap<RecipeCreateViewModel, Recipe>()
             .ForMember(dest => dest.Steps, opt => opt.MapFrom(src => src.Steps))
-            .ForMember(dest => dest.RecipeIngredients, opt => opt.MapFrom(src => src.RecipeIngredients));
+            .ForMember(dest => dest.Ingrds, opt => opt.MapFrom(src => src.Ingrds));
         CreateMap<StepCreateViewModel,Step>();
-        CreateMap<RecipeIngredientCreateViewModel,RecipeIngredient>();
+        CreateMap<IngredientCreateViewModel,Ingredient>();
         
         CreateMap<Recipe, RecipeSearchViewModel>();
         CreateMap<Recipe, RecipeDetailsViewModel>()
             .ForMember(dest => dest.Steps, opt => opt.MapFrom(src => src.Steps))
-            .ForMember(dest => dest.RecipeIngredients, opt => opt.MapFrom(src => src.RecipeIngredients));
+            .ForMember(dest => dest.Ingrds, opt => opt.MapFrom(src => src.Ingrds));
         
 
     }

@@ -15,7 +15,7 @@ public class RecipeCreateViewModel
     [ValidateNever]
     public string RecipeImage { get; set; }
     public IEnumerable<StepCreateViewModel> Steps { get; set; }
-    public IEnumerable<RecipeIngredientCreateViewModel> RecipeIngredients { get; set; }
+    public IEnumerable<IngredientCreateViewModel> Ingrds{ get; set; }
     
    
    
