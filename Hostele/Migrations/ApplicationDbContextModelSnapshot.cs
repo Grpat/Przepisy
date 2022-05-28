@@ -108,6 +108,44 @@ namespace Hostele.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("Hostele.Models.Comment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("AppUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("RecipeId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppUserId");
+
+                    b.HasIndex("RecipeId");
+
+                    b.ToTable("Comments");
+                });
+
             modelBuilder.Entity("Hostele.Models.Ingredient", b =>
                 {
                     b.Property<int>("Id")
@@ -116,17 +154,17 @@ namespace Hostele.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<decimal?>("Amount")
+                    b.Property<decimal>("Amount")
                         .HasColumnType("decimal(5,1)");
 
                     b.Property<string>("IngredientName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Measure")
+                    b.Property<int>("Measure")
                         .HasColumnType("int");
 
-                    b.Property<int?>("MeasureNumber")
+                    b.Property<int>("MeasureNumber")
                         .HasColumnType("int");
 
                     b.Property<int>("RecipeId")
@@ -147,20 +185,20 @@ namespace Hostele.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<decimal?>("Carbohydrates")
+                    b.Property<decimal>("Carbohydrates")
                         .HasColumnType("decimal(5,1)");
 
-                    b.Property<decimal?>("Fat")
+                    b.Property<decimal>("Fat")
                         .HasColumnType("decimal(5,1)");
 
                     b.Property<string>("IngredientName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal?>("Kcal")
+                    b.Property<decimal>("Kcal")
                         .HasColumnType("decimal(5,1)");
 
-                    b.Property<decimal?>("Protein")
+                    b.Property<decimal>("Protein")
                         .HasColumnType("decimal(5,1)");
 
                     b.HasKey("Id");
@@ -177,10 +215,9 @@ namespace Hostele.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("AppUserId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("CategoryId")
+                    b.Property<int?>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedDate")
@@ -193,6 +230,7 @@ namespace Hostele.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("RecipeImage")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RecipeName")
@@ -208,38 +246,6 @@ namespace Hostele.Migrations
                     b.ToTable("Recipes");
                 });
 
-            modelBuilder.Entity("Hostele.Models.RecipeIngredient", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<decimal?>("Amount")
-                        .HasColumnType("decimal(5,1)");
-
-                    b.Property<int>("IngredientsId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("Measure")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("MeasureNumber")
-                        .HasColumnType("int");
-
-                    b.Property<int>("RecipeId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IngredientsId");
-
-                    b.HasIndex("RecipeId");
-
-                    b.ToTable("RecipeIngredients");
-                });
-
             modelBuilder.Entity("Hostele.Models.Step", b =>
                 {
                     b.Property<int>("Id")
@@ -252,11 +258,8 @@ namespace Hostele.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("RecipeId")
+                    b.Property<int?>("RecipeId")
                         .HasColumnType("int");
-
-                    b.Property<string>("StepImage")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -398,6 +401,24 @@ namespace Hostele.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Hostele.Models.Comment", b =>
+                {
+                    b.HasOne("Hostele.Models.AppUser", "AppUser")
+                        .WithMany()
+                        .HasForeignKey("AppUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Hostele.Models.Recipe", "Recipe")
+                        .WithMany("Comments")
+                        .HasForeignKey("RecipeId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("AppUser");
+
+                    b.Navigation("Recipe");
+                });
+
             modelBuilder.Entity("Hostele.Models.Ingredient", b =>
                 {
                     b.HasOne("Hostele.Models.Recipe", "Recipe")
@@ -413,38 +434,16 @@ namespace Hostele.Migrations
                 {
                     b.HasOne("Hostele.Models.AppUser", "AppUser")
                         .WithMany()
-                        .HasForeignKey("AppUserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("AppUserId");
 
                     b.HasOne("Hostele.Models.Category", "Category")
                         .WithMany("Recipes")
                         .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("AppUser");
 
                     b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("Hostele.Models.RecipeIngredient", b =>
-                {
-                    b.HasOne("Hostele.Models.Ingredients", "Ingredients")
-                        .WithMany("RecipeIngredients")
-                        .HasForeignKey("IngredientsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Hostele.Models.Recipe", "Recipe")
-                        .WithMany("RecipeIngredients")
-                        .HasForeignKey("RecipeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Ingredients");
-
-                    b.Navigation("Recipe");
                 });
 
             modelBuilder.Entity("Hostele.Models.Step", b =>
@@ -452,8 +451,7 @@ namespace Hostele.Migrations
                     b.HasOne("Hostele.Models.Recipe", "Recipe")
                         .WithMany("Steps")
                         .HasForeignKey("RecipeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Recipe");
                 });
@@ -514,16 +512,11 @@ namespace Hostele.Migrations
                     b.Navigation("Recipes");
                 });
 
-            modelBuilder.Entity("Hostele.Models.Ingredients", b =>
-                {
-                    b.Navigation("RecipeIngredients");
-                });
-
             modelBuilder.Entity("Hostele.Models.Recipe", b =>
                 {
-                    b.Navigation("Ingrds");
+                    b.Navigation("Comments");
 
-                    b.Navigation("RecipeIngredients");
+                    b.Navigation("Ingrds");
 
                     b.Navigation("Steps");
                 });

@@ -12,8 +12,8 @@ public class IngredientCreateViewModel
     public string IngredientName { get; set; }
     
     [Column(TypeName = "decimal(5, 1)")]
-    public decimal? Amount { get; set; }
-    public int MeasureNumber { get; set; }
+    public decimal Amount { get; set; }
+    /*public int MeasureNumber { get; set; }*/
     public Measure? Measure { get; set; }
     
 }

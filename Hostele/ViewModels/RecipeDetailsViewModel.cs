@@ -12,6 +12,8 @@ public class RecipeDetailsViewModel
     public string RecipeName { get; set; }
     [Range(1, 200)]
     public int PrepTime { get; set; }
+
+    public int AverageRating { get; set; } = 0;
     
     [ValidateNever]
     public string? RecipeImage { get; set; }
@@ -21,6 +23,7 @@ public class RecipeDetailsViewModel
     public Category? Category { get; set; }
     
     public IEnumerable<Ingredient>? Ingrds { get; set; }
+    public IEnumerable<Comment>? Comments { get; set; }
     public List<Step> Steps { get; set; }
     
     public string AppUserId { get; set; }

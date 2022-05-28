@@ -1,5 +1,6 @@
 #nullable disable
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
@@ -16,6 +17,7 @@ using Hostele.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.CodeAnalysis.VisualBasic.Syntax;
 using Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore;
+using NinjaNye.SearchExtensions;
 using X.PagedList;
 
 
@@ -24,15 +26,13 @@ namespace Hostele.Controllers
     [Authorize]
     public class RecipeController : Controller
     {
-        private readonly ApplicationDbContext _context;
         private readonly IWebHostEnvironment _hostEnvironment;
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _unitOfWork;
 
 
-        public RecipeController(ApplicationDbContext context, IWebHostEnvironment hostEnvironment, IMapper mapper, IUnitOfWork unitOfWork)
+        public RecipeController(IWebHostEnvironment hostEnvironment, IMapper mapper, IUnitOfWork unitOfWork)
         {
-            _context = context;
             _hostEnvironment = hostEnvironment;
             _mapper = mapper;
             _unitOfWork = unitOfWork;
@@ -43,19 +43,19 @@ namespace Hostele.Controllers
         public async Task<IActionResult> Index()
         {
             
-            var recipes = _unitOfWork.Recipe.GetAll(include: x => x
-                .Include(a => a.Category));
+            var recipes = _unitOfWork.Recipe.GetAll(includeProperties: "Category");
             return View(await recipes);
         }
         [AllowAnonymous]
         public async Task<IActionResult> MainView(string sortOrder, string currentFilter, string searchString, string category,int? page)
         {
-            ViewData["ItemsList"] = await _context.Categories.Select(x => x.CategoryName).ToListAsync();
+            
+            ViewData["ItemsList"] = await _unitOfWork.Category.GetSelected(select: x => x.CategoryName);
             ViewBag.CurrentCategoryFilter = category;
             ViewBag.CurrentSort = sortOrder;
             ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
             ViewBag.DateSortParm = sortOrder == "Date" ? "Date" : "date_desc";
-
+            
             if (searchString != null)
             {
                 page = 1;
@@ -65,44 +65,25 @@ namespace Hostele.Controllers
                 searchString = currentFilter;
             }
             ViewBag.CurrentFilter = searchString;
-
-            //Should be done in reposiotory as Queryable 
-            var recipes = from s in await _unitOfWork.Recipe.GetAll(include: x => x
-                    .Include(a=>a.Category)
-                    .Include(a => a.Ingrds))
-                select s;
             
-            if (!String.IsNullOrEmpty(searchString))
-            {
-                recipes = recipes.Where(s => s.Ingrds != null && (s.RecipeName.ToUpper().Contains(searchString.ToUpper())
-                                                                               ||  s.Ingrds.Select(x=>x.IngredientName.ToUpper()).Contains(searchString.ToUpper())));
-            }
-            if (!String.IsNullOrEmpty(category))
-            {
-                recipes = recipes.Where(s => s.Category != null && s.Category.CategoryName==category);
-            }
-            switch (sortOrder)
-            {
-                case "name_desc":
-                    recipes = recipes.OrderByDescending(s => s.RecipeName);
-                    break;
-                case "Date":
-                    recipes = recipes.OrderBy(s => s.CreatedDate);
-                    break;
-                case "date_desc":
-                    recipes = recipes.OrderByDescending(s => s.CreatedDate);
-                    break;
-                default:  // Name ascending 
-                    recipes = recipes.OrderBy(s => s.RecipeName);
-                    break;
-            } 
+            var recipes = await _unitOfWork.Recipe.GetFiltered(includeProperties: "Category,Ingrds,Comments",
+                searchString: searchString, category: category, sortOrder: sortOrder);
            
             int pageSize = 6;
             int pageNumber = (page ?? 1);
             var recipeList =await recipes.ToListAsync();
             
-            var recipeSearchViewModel=_mapper.Map<IEnumerable<Recipe>, IEnumerable<RecipeSearchViewModel>>(recipeList);
-
+            var recipeSearchViewModel=await _mapper.Map<IEnumerable<Recipe>, IEnumerable<RecipeSearchViewModel>>(recipeList).ToListAsync();
+            foreach(var item in recipeSearchViewModel)
+            {
+                if (item.Comments.Any())
+                {
+                    item.AverageRating= (int) (item.Comments.Select(x => x.Rating).Average());
+                   
+                }
+                
+            }
+            
             return View(recipeSearchViewModel.ToPagedList(pageNumber, pageSize));
         }
         
@@ -126,9 +107,9 @@ namespace Hostele.Controllers
                 return NotFound();
             }
 
-            var recipe = await _context.Recipes
-                .Include(r => r.Category)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            
+            var recipe =
+                await _unitOfWork.Recipe.GetFirstOrDefault(includeProperties: "Category", filter: m => m.Id == id);
             if (recipe == null)
             {
                 return NotFound();
@@ -144,13 +125,16 @@ namespace Hostele.Controllers
                 return NotFound();
             }
 
-            var recipe = await _unitOfWork.Recipe.GetFirstOrDefault(x => x.Id == id, include: y => y
-                .Include(r => r.Category)
-                .Include(r => r.Steps)
-                .Include(r => r.Ingrds));
+            var recipe = await _unitOfWork.Recipe.GetFirstOrDefault(x=>x.Id==id,includeProperties: "Category,Steps,Ingrds,Comments");
                 
            
             var recipeSDetailsViewModel = _mapper.Map<RecipeDetailsViewModel>(recipe);
+            if (recipe.Comments.Any())
+            {
+                recipeSDetailsViewModel.AverageRating =
+                    Convert.ToInt32(recipe.Comments.Select(x => x.Rating).Average());
+            }
+
             if (recipe == null)
             {
                 return NotFound();
@@ -162,9 +146,9 @@ namespace Hostele.Controllers
 
         // GET: AddRecipe/Create
         
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "CategoryName");
+            ViewData["CategoryId"] = new SelectList(await _unitOfWork.Category.GetAll(),"Id", "CategoryName");
             return View();
         }
 
@@ -179,36 +163,60 @@ namespace Hostele.Controllers
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
             
-
-           
             if (ModelState.IsValid)
             {
                 string wwwRootPath=_hostEnvironment.WebRootPath;
-                if (file != null)
+                if (recipe.RecipeImage != null)
                 {
                     string fileName = Guid.NewGuid().ToString();
                     var uploads = Path.Combine(wwwRootPath, @"images\recipes");
-                    var extension = Path.GetExtension(file.FileName);
+                    var extension = Path.GetExtension(recipe.RecipeImage.FileName);
 
                     using (var fileStreams = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
                     {
-                        await file.CopyToAsync(fileStreams);
+                        await recipe.RecipeImage.CopyToAsync(fileStreams);
                     }
 
                    
-                    recipe.RecipeImage = @"\images\recipes\" + fileName + extension;
+                    recipe.RecipePath = @"\images\recipes\" + fileName + extension;
                     
                 }
                 var Recipe = _mapper.Map<Recipe>(recipe);
                 Recipe.AppUserId = claim.Value;
-                _context.Add(Recipe);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                //Recipe.RecipeImage=@"\images\recipes\" + fileName + extension;
+                _unitOfWork.Recipe.Add(Recipe);
+                await _unitOfWork.Save();
+                return RedirectToAction(nameof(MainView));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Id", recipe.CategoryId);
+            ViewData["CategoryId"] = new SelectList(await _unitOfWork.Category.GetAll(), "Id", "Id", recipe.CategoryId);
             return View(recipe);
         }
+        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public async Task<IActionResult> AddComment([Bind("Id,Content,Rating,RecipeId")] CommentViewModel commentViewModel)
+        {
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            
+            var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+
+            if (ModelState.IsValid)
+            {
+                var comment = _mapper.Map<Comment>(commentViewModel);
+                comment.AppUserId = claim.Value;
+                comment.UserName = User.Identity.Name;
+                _unitOfWork.Comment.Add(comment);
+                await _unitOfWork.Save();
+                return RedirectToAction(nameof(RecipeDetails),new {id=comment.RecipeId});
+            }
+
+            return RedirectToAction(nameof(RecipeDetails),new {id=commentViewModel.RecipeId});
+           // return View("RecipeDetails", );
+        }
+
         [Authorize(Roles=SD.Role_Admin)]
+        
         // GET: AddRecipe/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -217,12 +225,13 @@ namespace Hostele.Controllers
                 return NotFound();
             }
 
-            var recipe = await _context.Recipes.FindAsync(id);
+            var recipe = await _unitOfWork.Recipe.GetFirstOrDefault(filter: x => x.Id == id);
+            
             if (recipe == null)
             {
                 return NotFound();
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Id", recipe.CategoryId);
+            ViewData["CategoryId"] = new SelectList(await _unitOfWork.Category.GetAll(), "Id", "Id", recipe.CategoryId);
             return View(recipe);
         }
 
@@ -243,8 +252,8 @@ namespace Hostele.Controllers
             {
                 try
                 {
-                    _context.Update(recipe);
-                    await _context.SaveChangesAsync();
+                    _unitOfWork.Recipe.Update(recipe);
+                    await _unitOfWork.Save();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -259,7 +268,7 @@ namespace Hostele.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Id", recipe.CategoryId);
+            ViewData["CategoryId"] = new SelectList(await _unitOfWork.Category.GetAll(), "Id", "Id", recipe.CategoryId);
             return View(recipe);
         }
         [Authorize(Roles=SD.Role_Admin)]
@@ -271,9 +280,8 @@ namespace Hostele.Controllers
                 return NotFound();
             }
 
-            var recipe = await _context.Recipes
-                .Include(r => r.Category)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var recipe = await _unitOfWork.Recipe.GetFirstOrDefault(includeProperties: "Category", filter: m => m.Id == id);
+            
             if (recipe == null)
             {
                 return NotFound();
@@ -288,15 +296,16 @@ namespace Hostele.Controllers
         [Authorize(Roles=SD.Role_Admin)]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var recipe = await _context.Recipes.FindAsync(id);
-            _context.Recipes.Remove(recipe);
-            await _context.SaveChangesAsync();
+            
+            var recipe = await _unitOfWork.Recipe.GetFirstOrDefault(filter: m => m.Id == id);
+            _unitOfWork.Recipe.Remove(recipe);
+            await _unitOfWork.Save();
             return RedirectToAction(nameof(Index));
         }
 
         private bool RecipeExists(int id)
         {
-            return _context.Recipes.Any(e => e.Id == id);
+            return _unitOfWork.Recipe.CheckIfExists(x => x.Id == id);
         }
     }
 }

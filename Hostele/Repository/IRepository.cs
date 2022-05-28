@@ -5,15 +5,17 @@ namespace Hostele.Repository;
 
 public interface IRepository<T> where T : class
 {
-    Task<T?> GetFirstOrDefault(Expression<Func<T, bool>> filter,Func<IQueryable<T>,IIncludableQueryable<T, object>>? include = null);
+    Task<T?> GetFirstOrDefault(Expression<Func<T, bool>> filter,string includeProperties = null);
 
-    /*Task <IEnumerable<T>> GetAll(string? includeProperties=null);*/
-    /*Task <IEnumerable<T>> GetAll( Expression<Func<T, bool>> filter = null,
+  
+    Task <IEnumerable<T>> GetAll2( Expression<Func<T, bool>> filter = null,
         Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
-        string includeProperties = "");*/
-    Task <IEnumerable<T>> GetAll(
-        Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null);
+        string includeProperties = null);
+    
+    Task <IEnumerable<T>> GetAll(string? includeProperties=null);
 
+
+    Task<ICollection<TType>> GetSelected<TType>(Expression<Func<T, TType>> select) where TType : class;
     
     void Add(T entity);
     void Remove(T entity);

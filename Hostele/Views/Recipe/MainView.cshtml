@@ -70,27 +70,30 @@
                         <div class="recepie_thumb">
                             <img class="img-fluid"src=@item.RecipeImage alt="">
                         </div>
+
+                        <div class="d-flex flex-row align-items-center comment">
+                            @for (var j = 1; j <= @item.AverageRating; j++)
+                            {
+                                <span class="starGlowN"></span>
+                            }
+                            @for (var k = (@item.AverageRating + 1); k <= 5; k++)
+                            {
+                                <span class="starFadeN"></span>
+                            }
+                        </div>
+
                         <h3>@item.RecipeName</h3>
-                        @*<span>Appetizer</span>*@
+
                         <p>Czas Przygotowania: @item.PrepTime Min</p>
                         <p>Trudność: @item.Difficulty</p>
-                            <div class="small-ratings">
-                                <i class="fa fa-star rating-color"></i>
-                                <i class="fa fa-star rating-color"></i>
-                                <i class="fa fa-star rating-color"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        
-                        
-                        <a  class="line_btn" asp-action="RecipeDetails" asp-route-id="@item.Id">Zobacz Pełny Przepis</a> 
+
+                        <a class="line_btn" asp-action="RecipeDetails" asp-route-id="@item.Id">Zobacz Pełny Przepis</a>
                     </div>
                 </div>
             }
         </div>
     </div>
 </div>
-
 
 <div class="d-flex flex-row-reverse pt-4">
     Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount

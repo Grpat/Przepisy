@@ -2932,3 +2932,4 @@ C:\Users\Patryk\RiderProjects\Przepisy\Hostele\obj\Debug\net6.0\Hostele.dll
 C:\Users\Patryk\RiderProjects\Przepisy\Hostele\obj\Debug\net6.0\ref\Hostele.dll
 C:\Users\Patryk\RiderProjects\Przepisy\Hostele\obj\Debug\net6.0\Hostele.pdb
 C:\Users\Patryk\RiderProjects\Przepisy\Hostele\obj\Debug\net6.0\Hostele.genruntimeconfig.cache
+C:\Users\Patryk\RiderProjects\Przepisy\Hostele\bin\Debug\net6.0\NinjaNye.SearchExtensions.dll

@@ -1,5 +1,6 @@
 ﻿using System.Linq.Expressions;
 using Hostele.Data;
+using Hostele.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 
@@ -15,58 +16,20 @@ public class Repository<T>: IRepository<T> where T:class
         _db = db;
         this.dbSet = _db.Set<T>();
     }
-    public async Task<T?> GetFirstOrDefault(Expression<Func<T, bool>> filter,Func<IQueryable<T>,IIncludableQueryable<T, object>>? include = null)
+    public async Task<T?> GetFirstOrDefault(Expression<Func<T, bool>> filter,string? includeProperties = null)
     {
         IQueryable<T> query = dbSet;
-        if (include != null)
-        {
-            query = include(query);
+        
+        foreach (var includeProperty in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)) 
+        { 
+            query = query.Include(includeProperty); 
         }
 
         query=query.Where(filter);
         return await query.FirstOrDefaultAsync();
-
     }
 
-    public async Task<IEnumerable<T>> GetAll(
-        Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null
-    )
-    {
-        IQueryable<T> query = dbSet;
-        
-        if (include != null)
-        {
-            query = include(query);
-            return await query.ToListAsync();
-        }
-
-        return await query.ToListAsync();
-    }
-
-    /*public async Task<IEnumerable<T>> GetAll(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = "")
-    {
-        IQueryable<T> query = dbSet;
-        
-        if (filter != null)
-        {
-            query = query.Where(filter);
-        }
-        foreach (var includeProperty in includeProperties.Split
-                     (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)) 
-        { 
-            query = query.Include(includeProperty); 
-        }
-        if (orderBy != null)
-        {
-            return await orderBy(query).ToListAsync();
-        }
-        else
-        {
-            return await query.ToListAsync();
-        }
-    }*/
-
-    /*public async Task <IEnumerable<T>> GetAll(string? includeProperties=null)
+    public async Task <IEnumerable<T>> GetAll(string? includeProperties=null)
     {
         IQueryable<T> query = dbSet;
         if (includeProperties != null)
@@ -79,8 +42,42 @@ public class Repository<T>: IRepository<T> where T:class
         }
         return await query.ToListAsync();
     }
-    */
 
+    public async Task<IEnumerable<T>> GetAll2(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = null)
+    {
+        IQueryable<T> query = dbSet;
+        
+        if (filter != null)
+        {
+            query = query.Where(filter);
+        }
+
+        if (includeProperties != null)
+        {
+            foreach (var includeProperty in includeProperties.Split
+                         (new char[] {','}, StringSplitOptions.RemoveEmptyEntries))
+            {
+                query = query.Include(includeProperty);
+            }
+        }
+
+        if (orderBy != null)
+        {
+            return await orderBy(query).ToListAsync();
+        }
+        
+        return await query.ToListAsync();
+        
+    }
+
+    public async Task<ICollection<TType>>GetSelected<TType>(Expression<Func<T, TType>> select) where TType : class
+    {
+        
+        return await dbSet.Select(select).ToListAsync();
+        
+    }
+    
+    
     public void Add(T entity)
     {
         dbSet.Add(entity);

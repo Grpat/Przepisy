@@ -12,7 +12,9 @@ public class RecipeSearchViewModel
     public string RecipeName { get; set; }
   
     public int PrepTime { get; set; }
+    public int AverageRating { get; set; } = 0;
     
+    public IEnumerable<Comment>? Comments { get; set; }
     public string? RecipeImage { get; set; }
     
     public Difficulty Difficulty { get; set; }

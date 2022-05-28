@@ -19,16 +19,17 @@ public class Recipe
     public string RecipeImage { get; set; }
     
     public Difficulty Difficulty { get; set; }
-    public int CategoryId { get; set; }
-    public Category Category { get; set; }
+    public int? CategoryId{ get; set; }
+    public Category? Category { get; set; }
     
     public IEnumerable<Ingredient>? Ingrds { get; set; }
-    public List<Step> Steps { get; set; }
+    public IEnumerable<Comment>? Comments { get; set; }
+    public List<Step>? Steps { get; set; }
     
-    public string AppUserId { get; set; }
+    public string? AppUserId{ get; set; }
     [ForeignKey("AppUserId")]
     [ValidateNever]
-    public AppUser AppUser { get; set; }
+    public AppUser? AppUser { get; set; }
     
     
     

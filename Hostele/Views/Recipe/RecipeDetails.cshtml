@@ -1,4 +1,11 @@
+@using Hostele.ViewModels
+@using Microsoft.CodeAnalysis.Differencing
+@using Hostele.Utility
+@using Microsoft.AspNetCore.Identity
 @model Hostele.ViewModels.RecipeDetailsViewModel
+
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
 
 @{
     ViewData["Title"] = "RecipeDetails";
@@ -6,30 +13,16 @@
     var index = 0;
 }
 
-@*<h1>Details</h1>*@
-
-<!-- Receipe Slider -->
-@*<div class="container">
-    $1$<div class="row">
-        <div class="col-12">
-            <div class="receipe-slider owl-carousel">
-                <img src="@Url.Content(Model?.RecipeImage)" class="mx-auto d-block" alt="">
-            </div>
-        </div>
-        
-    </div>#1#
-</div>*@
-
 <div class="receipe-content-area">
     <div class="container">
-       <div class="row">
-               <div class="col-12">
-                   <div class="receipe-slider owl-carousel">
-                       <img src="@Url.Content(Model?.RecipeImage)" class="img-fluid mx-auto d-block" alt="">
-                   </div>
-               </div>
-               
-           </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="receipe-slider owl-carousel">
+                    <img src="@Url.Content(Model?.RecipeImage)" class="img-fluid mx-auto d-block" alt="">
+                </div>
+            </div>
+
+        </div>
         <div class="row">
             <div class="col-12 col-md-8">
                 <div class="receipe-headline my-5">
@@ -46,13 +39,15 @@
             <div class="col-12 col-md-4">
                 <div class="receipe-ratings text-right my-5">
                     <div class="ratings">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                          @for (var i = 1; i <= @Model.AverageRating; i++)
+                          {
+                              <span class="starGlowN"></span>
+                          }
+                          @for (var i = (@Model.AverageRating + 1); i <= 5; i++)
+                          {
+                              <span class="starFadeN"></span>
+                          }
                     </div>
-                    <a href="#" class="btn delicious-btn">For Begginers</a>
                 </div>
             </div>
         </div>
@@ -89,41 +84,109 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-heading text-left">
-                    <h3>Leave a comment</h3>
+                    <h3>Dodaj Komentarz</h3>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex row pb-4 pt-3 ">
+            <div class="d-flex flex-column col-md-8">
+                <div class="coment-bottom bg-white p-2 px-4">
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <form asp-action="AddComment">
+                            @{
+                                @(await Html.PartialAsync("~/Views/Shared/_Comment.cshtml", new CommentViewModel() {RecipeId = Model.Id}))
+
+                            }
+                        </form>
+                    }
+                    else
+                    {
+                        
+                            <a class="link-success" id="login" asp-area="Identity" asp-page="/Account/Login">Zaloguj się aby dodać komentarz</a>
+                        
+                    }
+                    <div class="commented-section mt-2 pb-2">
+                        @foreach (var item in Model.Comments)
+                        {
+                            <div class="d-flex flex-row align-items-center commented-user">
+                                <h5 class="">@item.UserName</h5><span class="dot"></span><span class="commentDate">@Model.CreatedDate</span>
+                                @for (var i = 1; i <= item.Rating; i++)
+                                {
+                                    <span class="starGlowN"></span>
+                                }
+                                @for (var i = (item.Rating + 1); i <= 5; i++)
+                                {
+                                    <span class="starFadeN"></span>
+                                }
+                            </div>
+                            <div class="comment-text-sm pb-4">
+                                @Html.DisplayFor(modelItem => item.Content)
+
+                            </div>
+                        }
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12">
-                <div class="contact-form-area">
-                    <form action="#" method="post">
-                        <div class="row">
-                            <div class="col-12 col-lg-6">
-                                <input type="text" class="form-control" id="name" placeholder="Name">
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <input type="email" class="form-control" id="email" placeholder="E-mail">
-                            </div>
-                            <div class="col-12">
-                                <input type="text" class="form-control" id="subject" placeholder="Subject">
-                            </div>
-                            <div class="col-12">
-                                <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn delicious-btn mt-30" type="submit">Post Comments</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+
     </div>
 </div>
 
 
 <div>
-    @*<a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |*@
+    @*<a asp-action="Edit" asp-route-id="@Model?.Id">Edit<> /a> |*@
     <a asp-action="Index">Back to List</a>
 </div>
+
+@section Scripts {
+    <script>
+    function SubmitComment() {
+       
+        if ($("#Rating").val() == "0") {
+           Swal.fire({
+             icon: 'error',
+             title: 'Oops...',
+             text: 'Oceń przepis w skali 1-5!'
+            
+           })
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    
+    function CRate(r) {
+        $("#Rating").val(r);
+        for (var i = 1; i <= r; i++) {
+            $("#Rate" + i).attr('class', 'starGlow');
+        }
+        // unselect remaining
+        for (var i = r + 1; i <= 5; i++) {
+            $("#Rate" + i).attr('class', 'starFade');
+        }
+    }
+
+    function CRateOver(r) {
+        for (var i = 1; i <= r; i++) {
+            $("#Rate" + i).attr('class', 'starGlow');
+        }
+    }
+
+    function CRateOut(r) {
+        for (var i = 1; i <= r; i++) {
+            $("#Rate" + i).attr('class', 'starFade');
+        }
+    }
+
+    function CRateSelected() {
+        var setRating = $("#Rating").val();
+        for (var i = 1; i <= setRating; i++) {
+            $("#Rate" + i).attr('class', 'starGlow');
+        }
+    }
+      
+</script>
+}

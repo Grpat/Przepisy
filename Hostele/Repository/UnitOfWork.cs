@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using Hostele.Data;
+using Hostele.Models;
 
 namespace Hostele.Repository;
 
@@ -11,13 +12,14 @@ public class UnitOfWork:IUnitOfWork
     {
         _db = db;
         Recipe = new HostelRepository(_db);
-       
+        Category = new CategoryRepository(_db);
+        Comment = new CommentRepository(_db);
 
     }
-   // public IHostelRepository Hostel{ get; private set; }
-
-
-   public IRecipeRepository Recipe { get; }
+    
+    public IRecipeRepository Recipe { get; }
+   public ICategoryRepository Category { get; }
+   public ICommentRepository Comment { get; }
 
    public async Task Save()
     {

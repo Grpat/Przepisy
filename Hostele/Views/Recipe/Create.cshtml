@@ -25,7 +25,7 @@
             </div>
             <div class="col-sm-5">
                  <label asp-for="RecipeImage" class="control-label"></label>
-                 <input asp-for="RecipeImage" type="file" id="uploadBox" name="file" class="form-control"/>
+                 <input asp-for="RecipeImage" type="file" id="uploadBox" name="RecipeImage" class="form-control"/>
                  <span asp-validation-for="RecipeImage" class="text-danger"></span>
             </div>
             <div class="col-sm-5">
@@ -71,8 +71,37 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    
+
     <script>
+    
+     document.getElementById("uploadBox").addEventListener("change", validateFile)
+     
+     function validateFile(){
+       const allowedExtensions =  ['jpg','png'],
+             sizeLimit = 1_000_000; // 1 megabyte
+     
+       const { name:fileName, size:fileSize } = this.files[0];
+     
+       const fileExtension = fileName.split(".").pop();
+      
+       if(!allowedExtensions.includes(fileExtension)){
+         Swal.fire({
+                     icon: 'error',
+                     title: 'Oops...',
+                     text: 'Tylko pliki jpg,png!'
+                    
+                   })
+         this.value = null;
+       }else if(fileSize > sizeLimit){
+         Swal.fire({
+                     icon: 'error',
+                     title: 'Oops...',
+                     text: 'Za duży romzmiar pliku!'
+                    
+                   })
+         this.value = null;
+       }
+     }
     $(document).on('click', '#Btn_AddSteps', function (e) { 
                $.ajax({  
                    type:'POST',
@@ -109,9 +138,11 @@
        StepDiv.remove();
        }
         function deleteIngredient(IngredientDiv)
-              {
-             IngredientDiv.remove();
-              }
+          {
+            IngredientDiv.remove();
+          }
+          
+          
              
      </script>
 }
