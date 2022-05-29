@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\Hostele.csproj": {}
+    "C:\\Users\\Pietrek_Kogucik\\Downloads\\Przepisy\\Przepisy\\Hostele\\Hostele.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\Hostele.csproj": {
+    "C:\\Users\\Pietrek_Kogucik\\Downloads\\Przepisy\\Przepisy\\Hostele\\Hostele.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\Hostele.csproj",
+        "projectUniqueName": "C:\\Users\\Pietrek_Kogucik\\Downloads\\Przepisy\\Przepisy\\Hostele\\Hostele.csproj",
         "projectName": "Hostele",
-        "projectPath": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\Hostele.csproj",
-        "packagesPath": "C:\\Users\\Patryk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\obj\\",
+        "projectPath": "C:\\Users\\Pietrek_Kogucik\\Downloads\\Przepisy\\Przepisy\\Hostele\\Hostele.csproj",
+        "packagesPath": "C:\\Users\\Pietrek_Kogucik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pietrek_Kogucik\\Downloads\\Przepisy\\Przepisy\\Hostele\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Patryk\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Pietrek_Kogucik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,15 +54,15 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.4, )"
+              "version": "[6.0.5, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[6.0.4, )"
+              "version": "[6.0.5, )"
             },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.5, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -74,7 +76,7 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.0-preview.2.22153.1, )"
+              "version": "[6.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer.Design": {
               "target": "Package",
@@ -82,13 +84,13 @@
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.0-preview.2.22153.1, )"
+              "version": "[6.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Tools.DotNet": {
               "target": "Package",
@@ -96,11 +98,11 @@
             },
             "Microsoft.Extensions.Identity.Stores": {
               "target": "Package",
-              "version": "[6.0.4, )"
+              "version": "[6.0.5, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.5, )"
             },
             "NinjaNye.SearchExtensions": {
               "target": "Package",
@@ -114,13 +116,17 @@
               "target": "Package",
               "version": "[4.5.0, )"
             },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            },
             "X.PagedList": {
               "target": "Package",
-              "version": "[8.4.0, )"
+              "version": "[8.4.3, )"
             },
             "X.PagedList.Mvc.Core": {
               "target": "Package",
-              "version": "[8.4.0, )"
+              "version": "[8.4.3, )"
             }
           },
           "imports": [
@@ -141,7 +147,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
