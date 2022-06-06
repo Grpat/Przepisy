@@ -100,32 +100,18 @@ namespace Hostele.Areas.Identity.Pages.Account.Manage
         public async Task<IActionResult> OnPostAsync()
         {
             var user = await _userManager.GetUserAsync(User);
-            var name = user.Name;
-
-            if (user.UsernameChangeLimit > 0)
+            var firstName = user.Name;
+            //var lastName = user.LastName;
+            if (Input.Name != firstName)
             {
-                if (Input.Name != user.UserName)
-                {
-                    var userNameExists = await _userManager.FindByNameAsync(Input.Name);
-                    if (userNameExists != null)
-                    {
-                        StatusMessage = "User name already taken. Select a different username.";
-                        return RedirectToPage();
-                    }
-                    var setUserName = await _userManager.SetUserNameAsync(user, Input.Name);
-                    if (!setUserName.Succeeded)
-                    {
-                        StatusMessage = "Unexpected error when trying to set user name.";
-                        return RedirectToPage();
-                    }
-                    else
-                    {
-                        user.UsernameChangeLimit -= 1;
-                        await _userManager.UpdateAsync(user);
-                    }
-                }
+                user.Name = Input.Name;
+                await _userManager.UpdateAsync(user);
             }
-
+            //if (Input.LastName != lastName)
+            //{
+            //    user.LastName = Input.LastName;
+            //    await _userManager.UpdateAsync(user);
+            //}
             if (Request.Form.Files.Count > 0)
             {
                 IFormFile file = Request.Form.Files.FirstOrDefault();
@@ -136,15 +122,6 @@ namespace Hostele.Areas.Identity.Pages.Account.Manage
                 }
                 await _userManager.UpdateAsync(user);
             }
-
-            if (Input.Name != name)
-            {
-                user.Name = Input.Name;
-                await _userManager.UpdateAsync(user);
-            }
-
-            
-
             if (user == null)
             {
                 return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
@@ -170,6 +147,77 @@ namespace Hostele.Areas.Identity.Pages.Account.Manage
             await _signInManager.RefreshSignInAsync(user);
             StatusMessage = "Your profile has been updated";
             return RedirectToPage();
+            //var user = await _userManager.GetUserAsync(User);
+            //var name = user.Name;
+
+            //if (user.UsernameChangeLimit > 0)
+            //{
+            //    if (Input.Name != user.UserName)
+            //    {
+            //        var userNameExists = await _userManager.FindByNameAsync(Input.Name);
+            //        if (userNameExists != null)
+            //        {
+            //            StatusMessage = "User name already taken. Select a different username.";
+            //            return RedirectToPage();
+            //        }
+            //        var setUserName = await _userManager.SetUserNameAsync(user, Input.Name);
+            //        if (!setUserName.Succeeded)
+            //        {
+            //            StatusMessage = "Unexpected error when trying to set user name.";
+            //            return RedirectToPage();
+            //        }
+            //        else
+            //        {
+            //            user.UsernameChangeLimit -= 1;
+            //            await _userManager.UpdateAsync(user);
+            //        }
+            //    }
+            //}
+
+            //if (Request.Form.Files.Count > 0)
+            //{
+            //    IFormFile file = Request.Form.Files.FirstOrDefault();
+            //    using (var dataStream = new MemoryStream())
+            //    {
+            //        await file.CopyToAsync(dataStream);
+            //        user.ProfilePicture = dataStream.ToArray();
+            //    }
+            //    await _userManager.UpdateAsync(user);
+            //}
+
+            //if (Input.Name != name)
+            //{
+            //    user.Name = Input.Name;
+            //    await _userManager.UpdateAsync(user);
+            //}
+
+            
+
+            //if (user == null)
+            //{
+            //    return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+            //}
+
+            //if (!ModelState.IsValid)
+            //{
+            //    await LoadAsync(user);
+            //    return Page();
+            //}
+
+            //var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
+            //if (Input.PhoneNumber != phoneNumber)
+            //{
+            //    var setPhoneResult = await _userManager.SetPhoneNumberAsync(user, Input.PhoneNumber);
+            //    if (!setPhoneResult.Succeeded)
+            //    {
+            //        StatusMessage = "Unexpected error when trying to set phone number.";
+            //        return RedirectToPage();
+            //    }
+            //}
+
+            //await _signInManager.RefreshSignInAsync(user);
+            //StatusMessage = "Your profile has been updated";
+            //return RedirectToPage();
         }
     }
 }
