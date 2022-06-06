@@ -106,7 +106,6 @@ namespace Hostele.Controllers
             {
                 return NotFound();
             }
-
             
             var recipe =
                 await _unitOfWork.Recipe.GetFirstOrDefault(includeProperties: "Category", filter: m => m.Id == id);

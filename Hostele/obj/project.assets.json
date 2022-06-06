@@ -10400,26 +10400,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pietrek_Kogucik\\.nuget\\packages\\": {}
+    "C:\\Users\\Patryk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pietrek_Kogucik\\Downloads\\Przepisy\\Przepisy\\Hostele\\Hostele.csproj",
+      "projectUniqueName": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\Hostele.csproj",
       "projectName": "Hostele",
-      "projectPath": "C:\\Users\\Pietrek_Kogucik\\Downloads\\Przepisy\\Przepisy\\Hostele\\Hostele.csproj",
-      "packagesPath": "C:\\Users\\Pietrek_Kogucik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pietrek_Kogucik\\Downloads\\Przepisy\\Przepisy\\Hostele\\obj\\",
+      "projectPath": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\Hostele.csproj",
+      "packagesPath": "C:\\Users\\Patryk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Patryk\\RiderProjects\\Przepisy\\Hostele\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Pietrek_Kogucik\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Patryk\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10545,7 +10543,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   },
