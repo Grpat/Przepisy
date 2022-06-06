@@ -29,7 +29,7 @@ public class Repository<T>: IRepository<T> where T:class
         return await query.FirstOrDefaultAsync();
     }
 
-    public async Task <IEnumerable<T>> GetAll(string? includeProperties=null)
+    public async Task<IEnumerable<T>> GetAll(string? includeProperties = null, Expression<Func<T, bool>> filter = null)
     {
         IQueryable<T> query = dbSet;
         if (includeProperties != null)
@@ -38,6 +38,9 @@ public class Repository<T>: IRepository<T> where T:class
                      includeProperties.Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries))
             {
                 query = query.Include(includeProp);
+            }
+            if (filter != null) { 
+            query = query.Where(filter);
             }
         }
         return await query.ToListAsync();

@@ -12,7 +12,7 @@ public interface IRepository<T> where T : class
         Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
         string includeProperties = null);
     
-    Task <IEnumerable<T>> GetAll(string? includeProperties=null);
+    Task <IEnumerable<T>> GetAll(string? includeProperties=null, Expression<Func<T, bool>> filter = null);
 
 
     Task<ICollection<TType>> GetSelected<TType>(Expression<Func<T, TType>> select) where TType : class;
