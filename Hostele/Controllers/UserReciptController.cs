@@ -7,7 +7,6 @@ using Hostele.ViewModels;
 using Microsoft.CodeAnalysis.VisualBasic.Syntax;
 using Hostele.Controllers;
 using Microsoft.AspNetCore.Authorization;
-
 namespace Hostele.Controllers
 {
     public class UserReciptController : Controller

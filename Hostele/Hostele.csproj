@@ -13,6 +13,7 @@
       <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.5" />
       <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.5" />
       <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.5" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="6.0.5" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0-preview.2.22153.1" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0-preview.2.22153.1">
         <PrivateAssets>all</PrivateAssets>
@@ -28,6 +29,7 @@
       <PackageReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
       <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="6.0.5" />
       <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.5" />
+      <PackageReference Include="MSTest.TestFramework" Version="2.2.7" />
       <PackageReference Include="NinjaNye.SearchExtensions" Version="3.0.1" />
       <PackageReference Include="PagedList" Version="1.17.0" />
       <PackageReference Include="PagedList.Mvc" Version="4.5.0" />
@@ -56,5 +58,7 @@
       <Folder Include="Partial View" />
       <Folder Include="wwwroot\images\recipes" />
     </ItemGroup>
-
+    <ItemGroup>
+        <IternalsVisibleTo Include="$(AssemblyName).TestProjectmstest" />
+    </ItemGroup>
 </Project>
