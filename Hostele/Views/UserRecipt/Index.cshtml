@@ -7,16 +7,9 @@
 
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Index">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.AppUser)
-            </th>
-            
             <th>
                 @Html.DisplayNameFor(model => model.RecipeName)
             </th>
@@ -27,15 +20,11 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.AppUser)
-            </td>
-            
-            <td>
                 @Html.DisplayFor(modelItem => item.RecipeName)
             </td>
             <td>
                 @* <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> | *@
-                @* <a asp-action="Details" asp-route-id="@item.Id">Details</a> | *@
+                 <a asp-action="Details" asp-route-id="@item.Id">Zobacz Przepis</a> 
                 @* <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> *@
             </td>
         </tr>
