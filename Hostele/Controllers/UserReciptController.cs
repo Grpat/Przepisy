@@ -33,21 +33,9 @@ namespace Hostele.Controllers
         
         public async Task<IActionResult>  Details(int? id)
         {
-            // var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
-            // var b = await _unitOfWork.Recipe.GetAll2(x=>x.AppUserId== userId);
-            // foreach (var temp in b)
-            // {
-            //     RedirectToAction("RecipeDetails", "Recipe");
-            //     
-            // }
-            // var a =RedirectToAction("RecipeDetails", "Recipe");
-            // return View();
-            // var a = RedirectToAction("RecipeDetails", "Recipe", id);
-            string url ="https://localhost:7078/"+ "Recipe/RecipeDetails" + "/" + id;
-            var url2 = Redirect(url);
-            return url2;
             
-            RedirectToAction("RecipeDetails", "Recipe",new {id=id});
+            var a =RedirectToAction("RecipeDetails", "Recipe",new {id=id});
+            return a;
         }
     }
 }
