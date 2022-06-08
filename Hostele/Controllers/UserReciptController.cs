@@ -46,6 +46,8 @@ namespace Hostele.Controllers
             string url ="https://localhost:7078/"+ "Recipe/RecipeDetails" + "/" + id;
             var url2 = Redirect(url);
             return url2;
+            
+            RedirectToAction("RecipeDetails", "Recipe",new {id=id});
         }
     }
 }
