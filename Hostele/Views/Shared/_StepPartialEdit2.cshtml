@@ -1,0 +1,26 @@
+﻿@using HtmlHelpers.BeginCollectionItemCore
+@using Microsoft.AspNetCore.Mvc.Rendering
+@model Hostele.ViewModels.StepCreateViewModel
+@{
+
+}
+
+
+
+    
+<div class="row pb-3 ">
+    @using (Html.BeginCollectionItem("Steps"))
+    {
+        <div class=" col-sm-7 col-11">
+            <input asp-for="Description" class="form-control"/>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="col-1 ">
+            @*<button type="button" id="Btn_DeleteSteps" onclick="deleteStep(document.getElementById('@Model.UniqueId'))" class="btn btn-outline-danger">
+                <i class="bi bi-x-lg"></i>
+            </button>*@
+             <button class="btn btn-outline-danger" asp-action="DeleteStep"  asp-route-id="@Model.Id" asp-route-RecipeId="@Model.RecipeId">  <i class="bi bi-x-lg"></i></button>
+        </div>
+    }
+
+</div>

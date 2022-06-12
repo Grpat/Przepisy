@@ -1,6 +1,6 @@
 ﻿@using HtmlHelpers.BeginCollectionItemCore
 @model Hostele.ViewModels.IngredientCreateViewModel
-<div class="row pt-3" id="@Model?.UniqueId">
+<div class="row pt-3" >
 @using (Html.BeginCollectionItem("Ingrds"))
 {
     <div class="col-sm-4">
@@ -22,9 +22,7 @@
     </div>
     <div class="col-sm-1 ">
           <a style="visibility:hidden"> Delete</a>   @*just to make the button align *@  
-        <button type="button" id="Btn_DeleteSteps" onclick="deleteIngredient(document.getElementById('@Model.UniqueId'))" class="btn btn-outline-danger">
-            <i class="bi bi-x-lg"></i>
-        </button>
+         <button class="btn btn-outline-danger" asp-action="DeleteIngr"  asp-route-id="@Model.Id" asp-route-RecipeId="@Model.RecipeId">  <i class="bi bi-x-lg"></i></button>
     </div>
 }
 </div>

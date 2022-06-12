@@ -19,10 +19,13 @@ public class Repository<T>: IRepository<T> where T:class
     public async Task<T?> GetFirstOrDefault(Expression<Func<T, bool>> filter,string? includeProperties = null)
     {
         IQueryable<T> query = dbSet;
-        
-        foreach (var includeProperty in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)) 
-        { 
-            query = query.Include(includeProperty); 
+        if (includeProperties != null)
+        {
+            foreach (var includeProperty in includeProperties.Split(new char[] {','},
+                         StringSplitOptions.RemoveEmptyEntries))
+            {
+                query = query.Include(includeProperty);
+            }
         }
 
         query=query.Where(filter);

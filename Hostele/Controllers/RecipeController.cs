@@ -182,7 +182,6 @@ namespace Hostele.Controllers
                 }
                 var Recipe = _mapper.Map<Recipe>(recipe);
                 Recipe.AppUserId = claim.Value;
-                //Recipe.RecipeImage=@"\images\recipes\" + fileName + extension;
                 _unitOfWork.Recipe.Add(Recipe);
                 await _unitOfWork.Save();
                 return RedirectToAction(nameof(MainView));

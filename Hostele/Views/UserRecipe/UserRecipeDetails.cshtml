@@ -1,0 +1,157 @@
+@using HtmlHelpers.BeginCollectionItemCore
+@model Hostele.ViewModels.UserRecipeEditViewModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h1>Edytuj Przepis</h1>
+@*@using (Html.BeginForm("Create", "Recipe", FormMethod.Post, new {id = "home-view", @class = "english-form", enctype = "multipart/form-data"}))
+ {*@
+@*<form asp-action="UserRecipeDetails"  enctype="multipart/form-data">*@
+<form method="post" enctype="multipart/form-data" asp-controller="UserRecipe" asp-action="UserRecipeDetails">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="col-sm-5">
+        <label asp-for="RecipeName" class="control-label"></label>
+        <input asp-for="RecipeName" class="form-control"/>
+        <span asp-validation-for="RecipeName" class="text-danger"></span>
+    </div>
+    <div class="col-sm-5">
+        <label asp-for="PrepTime" class="control-label"></label>
+        <input asp-for="PrepTime" class="form-control"/>
+        <span asp-validation-for="PrepTime" class="text-danger"></span>
+    </div>
+    <div class="col-sm-5">
+        <label asp-for="ImageVm" class="control-label"></label>
+        <input asp-for="ImageVm" type="file" id="uploadBox" name="ImageVm" class="form-control"/>
+        <span asp-validation-for="ImageVm" class="text-danger"></span>
+    </div>
+    <div class="col-sm-5">
+        <label asp-for="Difficulty" class="control-label"></label>
+        <select asp-for="Difficulty"
+                class="form-control" asp-items="Html.GetEnumSelectList<Difficulty>()">
+        </select>
+        <span asp-validation-for="Difficulty" class="text-danger"></span>
+    </div>
+    <div class="col-sm-5 pb-5">
+        <label asp-for="CategoryId" class="control-label"></label>
+        <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+    </div>
+    <h4>Lista kroków</h4>
+    <div class="form-group pt-2 pb-5">
+        <button type="button" id="Btn_AddSteps" class="btn btn-danger ">
+            <i class="bi bi-plus-lg"></i>
+        </button>
+    </div>
+    <div id="StepsHeaderClass">
+
+        @foreach (var entry in Model.Steps)
+        {
+            @Html.Partial("_StepPartialEdit2", entry)
+        }
+    </div>
+    
+    <h4>Lista składników</h4>
+    
+    <div class="form-group pt-2 pb-5">
+            <button type="button" id="Btn_AddIngredients" class="btn btn-danger ">
+                <i class="bi bi-plus-lg"></i>
+            </button>
+        </div>
+    <div id="RecipeIngredientsHeaderClass">
+
+
+        @foreach (var entry in Model.Ingrds)
+        {
+            @Html.Partial("_RecipeIngredientPartiallEdit", entry)
+        }
+    </div>
+
+
+    <input type="submit" value="Zapisz" class="btn btn-danger mt-4"/>
+</form>
+@*}*@
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+
+    <script>
+    
+   /*  document.getElementById("uploadBox").addEventListener("change", validateFile)*/
+     
+     
+    $(document).on('click', '#Btn_AddSteps', function (e) { 
+               $.ajax({  
+                   type:'POST',
+                   async:'true',
+                   url: '/UserRecipe/DisplaySteps',  
+                   success: function (partialView) {  
+                         
+                       $('#StepsHeaderClass').append(partialView);  
+                           $('form').removeData('validator');                   
+                           $('form').removeData('unobtrusiveValidation');                     
+                           $.validator.unobtrusive.parse('form');           
+                   }  
+               });  
+           });
+    
+       
+       
+       $(document).on('click', '#Btn_AddIngredients', function (e) { 
+                      $.ajax({  
+                          type:'POST',
+                          async:'true',
+                          url: '/UserRecipe/DisplayIngredient',  
+                          success: function (partialView) {  
+                                
+                              $('#RecipeIngredientsHeaderClass').append(partialView);  
+                                  $('form').removeData('validator');                   
+                                  $('form').removeData('unobtrusiveValidation');                     
+                                  $.validator.unobtrusive.parse('form');           
+                          }  
+                      });  
+                  });
+       function deleteStep(StepDiv)
+       {
+       StepDiv.remove();
+       }
+        function deleteIngredient(IngredientDiv)
+          {
+            IngredientDiv.remove();
+          }
+          
+           
+     document.getElementById("uploadBox").addEventListener("change", validateFile)
+     
+     function validateFile(){
+       const allowedExtensions =  ['jpg','png'],
+             sizeLimit = 1_000_000; // 1 megabyte
+     
+       const { name:fileName, size:fileSize } = this.files[0];
+     
+       const fileExtension = fileName.split(".").pop();
+      
+       if(!allowedExtensions.includes(fileExtension)){
+         Swal.fire({
+                     icon: 'error',
+                     title: 'Oops...',
+                     text: 'Tylko pliki jpg,png!'
+                    
+                   })
+         this.value = null;
+       }else if(fileSize > sizeLimit){
+         Swal.fire({
+                     icon: 'error',
+                     title: 'Oops...',
+                     text: 'Za duży romzmiar pliku!'
+                    
+                   })
+         this.value = null;
+       }
+     }
+          
+             
+     </script>
+}

@@ -84,6 +84,9 @@ namespace Hostele.Migrations
                     b.Property<int>("UsernameChangeLimit")
                         .HasColumnType("int");
 
+                    b.Property<bool>("isAdmin")
+                        .HasColumnType("bit");
+
                     b.HasKey("Id");
 
                     b.HasIndex("NormalizedEmail")
